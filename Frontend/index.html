@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ForensiQ</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <div class="logo-icon">FQ</div>
+
+                <div>
+                    <h1>ForensiQ</h1>
+                    <p>Digital Forensics Assistant</p>
+                </div>
+            </div>
+
+
+            <div class="upload-section">
+
+                <h2>Knowledge Base</h2>
+
+                <label for="pdfFile" class="upload-box">
+
+                    <span class="upload-icon">↑</span>
+
+                    <strong>Upload PDF</strong>
+
+                    <small>
+                        Add a forensic document
+                    </small>
+
+                </label>
+
+                <input
+                    type="file"
+                    id="pdfFile"
+                    accept=".pdf"
+                    hidden
+                />
+
+                <p id="uploadStatus"></p>
+
+            </div>
+
+
+            <div class="sidebar-bottom">
+
+                <p>ForensiQ v0.2.0</p>
+                <span>AI-powered document analysis</span>
+
+            </div>
+
+        </aside>
+
+
+        <!-- Main -->
+        <main class="main">
+
+            <header class="header">
+
+                <div>
+
+                    <h2>ForensiQ Assistant</h2>
+
+                    <p>
+                        Ask questions about your uploaded documents.
+                    </p>
+
+                </div>
+
+                <div class="status">
+                    <span></span>
+                    API Connected
+                </div>
+
+            </header>
+
+
+            <!-- Chat -->
+            <section id="chat" class="chat">
+
+                <div class="welcome">
+
+                    <div class="welcome-icon">
+                        FQ
+                    </div>
+
+                    <h2>
+                        Welcome to ForensiQ
+                    </h2>
+
+                    <p>
+                        Upload a PDF and ask questions about its contents.
+                    </p>
+
+                    <div class="examples">
+
+                        <button onclick="useExample('What is cloud computing?')">
+                            What is cloud computing?
+                        </button>
+
+                        <button onclick="useExample('What are the characteristics of cloud computing?')">
+                            What are its characteristics?
+                        </button>
+
+                        <button onclick="useExample('What are the benefits of cloud computing?')">
+                            What are its benefits?
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Input -->
+            <div class="input-area">
+
+                <div class="input-container">
+
+                    <input
+                        type="text"
+                        id="question"
+                        placeholder="Ask ForensiQ something..."
+                        onkeydown="handleEnter(event)"
+                    />
+
+                    <button
+                        id="sendButton"
+                        onclick="askQuestion()"
+                    >
+                        Send
+                    </button>
+
+                </div>
+
+                <p class="disclaimer">
+                    ForensiQ answers are generated from the uploaded documents.
+                </p>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,222 @@
+[
+  {
+    "text": "An Internship Report on Development of a Web-Based Personal Finance and Expense Tracking Application Submitted partial fulfillment of the requirements for the degree of BACHELOR OF TECHNOLOGY in COMPUTER SCIENCE AND ENGINEERING By PRARTHANA GURURAJ KATTI (2460495) Under the Guidance of KARTHIKEYAN H Department of Computer Science and Engineering School of Engineering and Technology, CHRIST (Deemed to be University), Kumbalagudu, Bengaluru - 560 074 AUGUST – 2026",
+    "page": 1
+  },
+  {
+    "text": "Vision “Excellence and Service” Mission CHRIST (Deemed to be University) is a nurturing ground for an individual’s holistic development to make effective contribution to the society in a dynamic environment. Core Values Faith in God Moral Uprightness Love of Fellow Beings Social Responsibility Pursuit of Excellence",
+    "page": 2
+  },
+  {
+    "text": "Department Vision “To fortify Ethical Computational Excellence” Department Mission M1: Imparts core and contemporary knowledge in the areas of Computation and Information Technology. M2: Promotes the culture of research and facilitates higher studies. M3: Acquaints the students with the latest industrial practices, team building and entrepreneurship. M4: Sensitizes the students to serve for environmental, social & ethical needs of society through lifelong learning. Program Educational Objectives (PEOs) PEO1: Professional Acumen: Understand, analyze and design solutions with professional competency for the real-world problems. PEO2: Critical Analysis: Develop software/embedded solutions for the require- ments, based on critical analysis and research. PEO3: Team work: Function effectively in a team and as an individual in a multidisciplinary/multicultural environment PEO4: Life Long Learning: Accomplish holistic development comprehending professional responsibilities.",
+    "page": 3
+  },
+  {
+    "text": "Programme Outcomes (POs) PO1: Engineering Knowledge Apply the knowledge of mathematics, science, en- gineering fundamentals, and an engineering specialization for the solution of complex engineering problems. PO2: Problem Analysis Identify, formulate, research literature, and analyze com- plex engineering problems reaching substantiated conclusions using first prin- ciples of mathematics, natural sciences, and engineering sciences. PO3: Design/Development of Solutions Design solutions for complex engineering problems and design system components or processes that meet the specified needs with appropriate consideration for public health and safety, and cultural, societal, and environmental considerations. PO4: Conduct Investigation of Complex Problems Use research-based knowl- edge and research methods including design of experiments, analysis and inter- pretation of data, and synthesis of the information to provide valid conclusions.",
+    "page": 4
+  },
+  {
+    "text": "PO5: Modern Tool Usage Create, select, and apply appropriate techniques, re- sources, and modern engineering and IT tools, including prediction and model- ing to complex engineering activities, with an understanding of the limitations. PO6: The Engineer and Society Apply reasoning informed by the contextual knowl- edge to assess societal, health, safety, legal, and cultural issues and the conse- quent responsibilities relevant to the professional engineering practice. PO7: Environment and Sustainability Understand the impact of the professional engineering solutions in societal and environmental contexts, and demonstrate the knowledge of, and need for sustainable development. PO8: Ethics Apply ethical principles and commit to professional ethics and respon- sibilities and norms of the engineering practice. PO9: Individual and Teamwork Function effectively as an individual, and as a member or leader in diverse teams, and in multidisciplinary settings.",
+    "page": 4
+  },
+  {
+    "text": "PO10: Communication Communicate effectively on complex engineering activities with the engineering community and with the society at large, such as, being able to comprehend and write effective reports and design documentation, make effective presentations, and give and receive clear instructions.",
+    "page": 4
+  },
+  {
+    "text": "PO11: Project Management and Finance Demonstrate knowledge and under- standing of the engineering and management principles and apply these to one’s own work, as a member and leader in a team, to manage projects and in multidisciplinary environments. PO12: Lifelong Learning Recognise the need for, and have the preparation and ability to engage in independent and life-long learning in the broadest context of technological change. iv",
+    "page": 5
+  },
+  {
+    "text": "Program Specific Outcomes (PSOs) PSO1: Software Architecture Apply the concepts of software en- gineering to Design and Develop software applications. PSO2: Resource Management Utilize Resource Management ideas to efficiently Develop and Deploy Software projects. PSO3: Reflections through Service Analyze Social Relevant Prob- lems and Design Software /IT based solutions through Service Learning.",
+    "page": 6
+  },
+  {
+    "text": "School of Engineering and Technology Department of Computer Science and Engineering CERTIFICATE This is to certify that PRARTHANA GURURAJ KATTI (2460495) has successfully com- pleted his/her internship work entitled “Development of a Web-Based Personal Finance and Expense Tracking Application” at COGNIFYZ TECHNOLOGIES, Nagpur, Ma- harashtra, India, from 03/04/2026 to 03/05/2026 for a duration of 32 days and submitted on «Internship Viva Date» in partial fulfillment for the award of Bachelor of Technology in COMPUTER SCIENCE AND ENGINEERING during the academic year 2026–27. GUIDE HEAD OF THE DEPARTMENT KARTHIKEYAN H DR. BALAMURUGAN (Signature with Date) (Signature with Seal) EXAMINER 1 Examiner 2 (Name & Signature with Date) (Name & Signature with Date) vi",
+    "page": 7
+  },
+  {
+    "text": "ACKNOWLEDGEMENT I would like to express my sincere gratitude to CHRIST (Deemed to be University), Ben- galuru, for providing me with the opportunity to undertake this internship as part of my academic programme. I am deeply grateful to my faculty guide, Karthikeyan H, for his guidance, support, and valuable suggestions throughout the internship and the preparation of this report. I also express my sincere thanks to Dr. Balamurugan, Head of the Department of Computer Science and Engineering, for providing the necessary academic support and encouragement. I would also like to thank Raj Sharma, my industry guide at Cognifyz Technologies, for his guidance and support during my internship. The opportunity to work as a Web Development Intern enabled me to gain practical exposure to web application development and apply the concepts learned during my academic studies. I am grateful to everyone who contributed directly or indirectly to the successful com- pletion of my internship and project.",
+    "page": 8
+  },
+  {
+    "text": "Finally, I would like to thank my family, friends, faculty members, and all those who supported and encouraged me throughout this learning experience. PRARTHANA GURURAJ KATTI vii",
+    "page": 8
+  },
+  {
+    "text": "DECLARATION I, PRARTHANA GURURAJ KATTI (Registration No. 2460495), hereby declare that the internship report entitled “Development of a Web-Based Personal Finance and Expense Tracking Application” is a genuine record of the work carried out by me during my intern- ship as a Web Development Intern at COGNIFYZ TECHNOLOGIES from 03/04/2026 to 03/05/2026. I further declare that the work presented in this report is based on my own learning, development, implementation, and experience gained during the internship. The report has been prepared for academic submission as part of the requirements of the Bachelor of Technology in Computer Science and Engineering at CHRIST (Deemed to be University). I confirm that the contents of this report have not been submitted previously, either wholly or partially, for the award of any other degree, diploma, or academic qualification. PRARTHANA GURURAJ KATTI Registration No.: 2460495 viii",
+    "page": 9
+  },
+  {
+    "text": "ABSTRACT This internship report presents the development of a web-based personal finance and expense tracking application undertaken during the Web Development Internship at Cognifyz Tech- nologies. The project focuses on providing a simple and interactive platform for recording, organising, and analysing personal expenses. The application was developed using Python and Streamlit, with Pandas used for processing and analysing expense data. Users can enter expenses along with relevant information such as amount, category, and date. The application stores the recorded information using CSV-based storage and provides summaries and visualisations that help users understand their spending patterns. Category-wise and monthly spending information is presented through graphical representations, while an automated insight identifies the category with the highest expenditure. The application also provides an option to download the recorded expense data.",
+    "page": 10
+  },
+  {
+    "text": "The project provided practical exposure to web application development, data handling, user interface design, data visualisation, application testing, and debugging. Through the development process, emphasis was placed on creating a straightforward interface and ensuring that financial data could be recorded and interpreted efficiently. The completed application demonstrates how Python-based web technologies can be used to develop a practical tool for personal financial management. Keywords: Personal Finance, Expense Tracking, Web Application, Python, Streamlit, Pandas, Data Visualisation ix",
+    "page": 10
+  },
+  {
+    "text": "CONTENTS 1 Introduction 1 1.1 Internship Overview . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1 1.2 Company Profile . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1 1.3 Problem Statement . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1 1.4 Objectives . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 1.5 Scope of the Project . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 1.6 Significance of the Project . . . . . . . . . . . . . . . . . . . . . . . . . . 3 1.7 Chapter Organisation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3 2 Technical Description and Implementation 4 2.1 Technologies Used . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4 2.1.1 Python . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4 2.1.2 Streamlit . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4 2.1.3 Pandas . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+    "page": 11
+  },
+  {
+    "text": "4 2.1.4 CSV Storage . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4 2.1.5 Python Operating System Module . . . . . . . . . . . . . . . . . . 5 2.2 Development Environment . . . . . . . . . . . . . . . . . . . . . . . . . . 5 2.3 System Requirements . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5 2.3.1 Software Requirements . . . . . . . . . . . . . . . . . . . . . . . . 5 2.3.2 Hardware Requirements . . . . . . . . . . . . . . . . . . . . . . . 6 2.4 System Architecture . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6 2.5 Application Workflow . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6 2.6 User Interface Design . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7 2.6.1 Expense Entry . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7 2.6.2 Expense Records . . . . . . . . . . . . . . . . . . . . . . . . . . . 7 2.6.3 Application Screenshots . . . . . . . . . . . . . . . . . . . . . . . 7 2.7 Expense Data Management . . .",
+    "page": 11
+  },
+  {
+    "text": ". . . . . . . . . . . . . . . . . . . . . . . 7 2.7.1 Data Structure . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8 2.8 Data Processing and Analysis . . . . . . . . . . . . . . . . . . . . . . . . . 8 2.8.1 Total Expenditure Calculation . . . . . . . . . . . . . . . . . . . . 8 2.8.2 Category-wise Expense Analysis . . . . . . . . . . . . . . . . . . . 9 2.8.3 Date Processing . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9 2.8.4 Monthly Expense Analysis . . . . . . . . . . . . . . . . . . . . . . 9 2.9 Data Visualisation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9 2.9.1 Category-wise Spending Visualisation . . . . . . . . . . . . . . . . 9 2.9.2 Monthly Spending Trend . . . . . . . . . . . . . . . . . . . . . . . 10 2.10 Automated Spending Insight . . . . . . . . . . . . . . . . . . . . . . . . . 10 x",
+    "page": 11
+  },
+  {
+    "text": "2.11 Data Export . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11 2.12 Testing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11 2.12.1 Functional Testing . . . . . . . . . . . . . . . . . . . . . . . . . . 11 2.12.2 Data Validation . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11 2.13 Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12 3 Conclusion and Future Scope 13 3.1 Conclusion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13 3.2 Skills and Knowledge Gained . . . . . . . . . . . . . . . . . . . . . . . . . 13 3.3 Challenges Encountered . . . . . . . . . . . . . . . . . . . . . . . . . . . 14 3.4 Future Scope . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14 3.5 Final Outcome . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15 Appendices 16 A.1 Offer Letter . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+    "page": 12
+  },
+  {
+    "text": "16 A.2 Completion Certificate . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17 References 18 xi",
+    "page": 12
+  },
+  {
+    "text": "LIST OF FIGURES 2.1 Finance Tracker Application Interface . . . . . . . . . . . . . . . . . . . . 8 2.2 Category-wise Spending Visualisation . . . . . . . . . . . . . . . . . . . . 10 2.3 Category-wise Spending Visualisation . . . . . . . . . . . . . . . . . . . . 10 2.4 Application Summary and Automated Spending Insight . . . . . . . . . . . 11 A.1 Internship Offer Letter . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16 A.2 Internship Completion Certificate . . . . . . . . . . . . . . . . . . . . . . 17 xii",
+    "page": 13
+  },
+  {
+    "text": "LIST OF TABLES 2.1 Expense Data Structure . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8 2.2 Functional Testing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12 xiii",
+    "page": 14
+  },
+  {
+    "text": "CHAPTER 1 INTRODUCTION 1.1 Internship Overview The internship was undertaken at Cognifyz Technologies as a Web Development Intern from 03 August 2025 to 03 September 2025. The internship provided an opportunity to apply concepts learned during the Bachelor of Technology programme in Computer Science and Engineering to a practical software development project. The major project undertaken during the internship was the development of a web-based personal finance and expense tracking application. The application was designed to provide users with a simple way to record their expenses and obtain meaningful information from their spending data. The internship provided practical exposure to application development, data processing, user interface design, data visualisation, testing, debugging, and project refinement. The experience helped in understanding how programming concepts can be combined to develop a functional application addressing a real-world requirement.",
+    "page": 15
+  },
+  {
+    "text": "1.2 Company Profile Cognifyz Technologies is a technology-oriented organisation that provides opportunities for practical exposure to software development and related technical domains. The internship provided an environment in which programming and development concepts could be applied to a practical project. During the internship, the focus was on web development and the implementation of a functional application. The internship experience involved understanding requirements, de- veloping application functionality, processing data, testing the implementation, and refining the application based on observed issues. The internship at Cognifyz Technologies therefore provided an opportunity to gain practical experience beyond classroom-based learning and to understand the different stages involved in developing a software application. 1.3 Problem Statement Managing personal expenses manually can make it difficult for users to maintain a clear understanding of their spending habits.",
+    "page": 15
+  },
+  {
+    "text": "When expenses are recorded across different sources or are not systematically organised, users may find it difficult to determine their total expenditure, identify categories where they spend the most, or observe changes in spending over time. 1",
+    "page": 15
+  },
+  {
+    "text": "The problem addressed by this project is the development of a simple web-based system that enables users to record personal expenses in a structured manner and analyse the resulting data. The proposed application provides a centralised interface through which users can enter expense information and obtain summaries and visual representations of their spending. The system also provides a basic automated insight by identifying the category with the highest expenditure. 1.4 Objectives The primary objective of the project is to develop a simple and interactive personal finance and expense tracking application. The specific objectives are: • To develop a web-based interface for recording personal expenses. • To store expense information in a structured and persistent format. • To process and analyse expense records using Python-based data processing tech- niques. • To calculate the total expenditure from recorded transactions.",
+    "page": 16
+  },
+  {
+    "text": "• To analyse expenditure according to different expense categories. • To analyse spending patterns across different months. • To present expense information through graphical visualisations. • To provide an automated insight identifying the category with the highest expenditure. • To provide an option for users to download their recorded expense data. • To gain practical experience in web application development, testing, debugging, and data analysis. 1.5 Scope of the Project The scope of the project includes the development of a lightweight web application for personal expense recording and analysis. The application allows users to enter information associated with an expense, including its amount, category, and date. The recorded information is stored using CSV-based storage and can subsequently be processed using Pandas. 2",
+    "page": 16
+  },
+  {
+    "text": "The application provides basic financial analysis through total expenditure calculations, category-wise aggregation, and monthly spending analysis. The processed information is displayed using tables and graphical visualisations. The project is intended primarily for personal expense tracking and does not attempt to provide professional financial advice, banking services, or comprehensive financial plan- ning. The current implementation also uses rule-based analysis rather than predictive machine-learning models. 1.6 Significance of the Project The project demonstrates how software development and data analysis techniques can be combined to solve a practical everyday problem. By providing a structured method for recording expenses, the application reduces the need for users to manually calculate their spending.",
+    "page": 17
+  },
+  {
+    "text": "The graphical representations make it easier to identify spending patterns, while the automated spending insight provides an immediate indication of the category contributing most to expenditure. From a technical perspective, the project provides practical experience in developing an interactive Python-based web application, handling structured data, performing data aggregation, creating visualisations, and testing application functionality. 1.7 Chapter Organisation The internship report is organised into three major chapters. Chapter 1 – Introduction presents an overview of the internship and project, the company profile, problem statement, objectives, scope, and significance of the project.",
+    "page": 17
+  },
+  {
+    "text": "Chapter 2 – Technical Description and Implementation explains the technologies used, development environment, system requirements, application architecture, workflow, data management, processing and analysis techniques, visualisation, automated insight generation, data export, testing, and project results. Chapter 3 – Conclusion and Future Scope summarises the overall internship and project outcomes, discusses the skills and knowledge gained, identifies challenges encoun- tered during development, and presents possible improvements and future extensions of the application. 3",
+    "page": 17
+  },
+  {
+    "text": "CHAPTER 2 TECHNICAL DESCRIPTION AND IMPLEMENTATION 2.1 Technologies Used The Personal Finance and Expense Tracking Web Application was developed using Python- based technologies for application development, data processing, storage, and visualisation. 2.1.1 Python Python was used as the primary programming language for implementing the application. The application logic, expense processing, calculations, and analysis were developed using Python. 2.1.2 Streamlit Streamlit was used to develop the interactive web-based user interface. It allows a Python application to be presented through a browser without requiring a separate front-end frame- work. In this project, Streamlit is used to collect expense information from the user, dis- play stored expense records, present spending summaries, display charts, and provide the expense-data download functionality. 2.1.3 Pandas Pandas was used for storing, manipulating, and analysing expense data.",
+    "page": 18
+  },
+  {
+    "text": "Expense records are represented using a Pandas DataFrame, allowing structured tabular processing. Pandas operations are used for calculating expenditure, grouping expenses according to categories, processing dates, and analysing spending patterns. 2.1.4 CSV Storage CSV format is used for persistent storage of expense records. The application loads pre- viously stored expense information from the CSV file and writes newly recorded expenses back to the file. The CSV-based approach provides a lightweight method of persistent storage without requiring a separate database management system. 4",
+    "page": 18
+  },
+  {
+    "text": "2.1.5 Python Operating System Module The Python os module is used to check whether the expense data file exists before attempting to load it. This allows the application to handle the initial state in which an expense file may not yet be available. 2.2 Development Environment The application was developed as a Python-based web application and executed using Streamlit. The project contains the main Python application file, the CSV file used for expense storage, and the requirements file containing the required dependencies. The major project components include: • app.py – contains the main application logic and user interface. • expenses.csv – stores the recorded expense information. • requirements.txt – specifies the Python dependencies required by the application. The application can be launched using the following command: streamlit run app.py Once launched, Streamlit runs the Python application and makes the interface accessible through a web browser.",
+    "page": 19
+  },
+  {
+    "text": "2.3 System Requirements 2.3.1 Software Requirements The software requirements for running the application include: • Python • Streamlit • Pandas • A modern web browser • An operating system capable of running Python and Streamlit The required Python libraries are specified in the project’s requirements.txt file. 5",
+    "page": 19
+  },
+  {
+    "text": "2.3.2 Hardware Requirements The application is lightweight and does not require specialised hardware. A standard computer capable of running Python and a modern web browser is sufficient. The application does not require GPU hardware because the current implementation performs lightweight tabular data processing. 2.4 System Architecture The application follows a simple data-processing architecture in which the user interacts with the Streamlit interface and the entered information is processed by the Python application. The overall architecture can be represented as: User →Streamlit Interface →Python Application Logic →Pandas Data Processing →expenses.csv The processed expense information is subsequently used to generate summaries, visu- alisations, and automated spending insights. A detailed architecture diagram will be included in the final report as an application figure. 2.5 Application Workflow The overall workflow of the application consists of the following stages: 1.",
+    "page": 20
+  },
+  {
+    "text": "The application is launched using Streamlit. 2. The application checks whether the expense CSV file exists. 3. Existing expense records are loaded when the file is available. 4. The user enters expense information through the application interface. 5. The application creates a new expense record. 6. The new record is added to the existing DataFrame. 7. The updated data is stored in the CSV file. 8. The recorded expenses are displayed to the user. 9. Total expenditure is calculated. 10. Expenses are grouped according to category. 11. Monthly spending information is processed. 6",
+    "page": 20
+  },
+  {
+    "text": "12. Graphical representations of spending are generated. 13. The highest-spending category is identified as an automated insight. 14. The expense data can be downloaded as a CSV file. 2.6 User Interface Design The application provides a browser-based interface through Streamlit. The interface is designed to keep expense entry and analysis within a single application. The major interface components include expense-entry controls, stored expense infor- mation, spending summaries, graphical visualisations, automated spending information, and the data-download option. The interface allows the user to enter an expense amount, select an appropriate category, specify the date, and submit the information for storage and analysis. 2.6.1 Expense Entry The expense-entry section provides the user with controls for entering the amount, selecting the expense category, and specifying the relevant date. The entered values are used to create a structured expense record.",
+    "page": 21
+  },
+  {
+    "text": "2.6.2 Expense Records Previously recorded expenses are displayed in tabular form. This allows the user to review the information that has been entered into the application. 2.6.3 Application Screenshots Screenshots of the completed application interface will be inserted into this section after the final application screenshots are available. 2.7 Expense Data Management The application uses a CSV file named expenses.csv for maintaining expense records. This provides a simple and lightweight method of persistent data storage. When the application starts, it checks whether the expense file is available. If the file exists, the stored records are loaded into a Pandas DataFrame. If the file does not exist, the application can initialise the required data structure. The expense records contain three primary attributes: • Amount – represents the monetary value of the expense. 7",
+    "page": 21
+  },
+  {
+    "text": "Figure 2.1: Finance Tracker Application Interface • Category – identifies the type of expense. • Date – represents the date associated with the expense. When a user submits a new expense, the application creates a new record containing the entered amount, selected category, and selected date. The record is added to the existing data and the updated information is written to the CSV file. 2.7.1 Data Structure The expense information is maintained in tabular form using a Pandas DataFrame. Table 2.1: Expense Data Structure Field Description Amount Monetary value of the expense Category Classification of the expense Date Date associated with the expense 2.8 Data Processing and Analysis Pandas is used to process and analyse the stored expense records. The structured DataFrame allows the application to perform calculations, grouping, filtering, and time-based analysis.",
+    "page": 22
+  },
+  {
+    "text": "2.8.1 Total Expenditure Calculation The application calculates the total expenditure by summing the values recorded in the amount field. The calculation can be represented as: 8",
+    "page": 22
+  },
+  {
+    "text": "𝑇𝑜𝑡𝑎𝑙𝐸𝑥𝑝𝑒𝑛𝑑𝑖𝑡𝑢𝑟𝑒= 𝑛 ∑︁ 𝑖=1 𝐴𝑚𝑜𝑢𝑛𝑡𝑖 where 𝑛represents the number of recorded expenses. The resulting value provides the user with an overall view of their recorded expenditure. 2.8.2 Category-wise Expense Analysis The application groups expense records according to their category and calculates the total amount spent in each category. The category-wise calculation can be represented as: 𝐶𝑎𝑡𝑒𝑔𝑜𝑟𝑦𝑇𝑜𝑡𝑎𝑙= ∑︁ 𝐴𝑚𝑜𝑢𝑛𝑡𝑓𝑜𝑟𝑒𝑎𝑐ℎ𝐶𝑎𝑡𝑒𝑔𝑜𝑟𝑦 This analysis allows the user to identify categories that contribute significantly to their overall expenditure. 2.8.3 Date Processing The date associated with each expense is processed using date-related functionality. Con- verting the date values into a consistent format allows the application to perform time-based analysis. Date processing is particularly important for analysing monthly expenditure. 2.8.4 Monthly Expense Analysis The application processes the expense dates to determine the corresponding month and aggregates expenses belonging to the same period.",
+    "page": 23
+  },
+  {
+    "text": "Monthly analysis helps the user observe changes in expenditure over time and identify periods with comparatively higher or lower spending. 2.9 Data Visualisation Data visualisation is used to present the processed expense information in an easily inter- pretable form. 2.9.1 Category-wise Spending Visualisation The application generates a graphical representation of the total amount spent across expense categories. The category-wise information is first aggregated and then presented using a chart. This makes it easier for the user to identify the categories contributing most to expenditure. 9",
+    "page": 23
+  },
+  {
+    "text": "Figure 2.2: Category-wise Spending Visualisation 2.9.2 Monthly Spending Trend The application also presents monthly expenditure information graphically. Monthly totals are calculated from the recorded dates and represented as a spending trend. This visualisation allows the user to observe changes in spending across different months. Figure 2.3: Category-wise Spending Visualisation 2.10 Automated Spending Insight The application provides a basic automated spending insight based on the recorded expense data. After calculating the total expenditure for each category, the application identifies the category with the highest total spending. The category with the maximum aggregated expenditure is then presented to the user as the highest-spending category. This feature reduces the need for the user to manually compare all category totals. 10",
+    "page": 24
+  },
+  {
+    "text": "The current implementation uses rule-based analysis rather than a machine-learning model. The insight is generated directly from the aggregated expense data. Figure 2.4: Application Summary and Automated Spending Insight 2.11 Data Export The application provides a CSV download facility that allows users to export their recorded expense information. The download functionality enables users to obtain their expense records for backup, external analysis, or future reference. It also improves data portability by allowing the information to be used outside the application. 2.12 Testing Testing was performed to verify the major functions of the application, including expense entry, data storage, calculations, visualisation, and data export. 2.12.1 Functional Testing The major functional test areas are shown below. 2.12.2 Data Validation The application was tested using expense records belonging to different categories and dates.",
+    "page": 25
+  },
+  {
+    "text": "This helped verify that newly entered records were added correctly and that the resulting calculations and visualisations reflected the stored information. 11",
+    "page": 25
+  },
+  {
+    "text": "Table 2.2: Functional Testing Test Area Expected Result Application launch Application loads successfully through Stream- lit Expense entry User can enter an expense amount Category selection User can select an expense category Date selection User can associate a date with an expense Expense storage New expense is stored in the CSV file Expense display Recorded expenses are displayed correctly Total calculation Total expenditure is calculated correctly Category analysis Category-wise totals are generated Monthly analysis Monthly spending information is processed Visualisation Spending charts are displayed Spending insight Highest-spending category is identified CSV download Expense data can be downloaded Testing with multiple records was particularly useful for verifying category-wise aggre- gation and monthly spending analysis. 2.13 Results The completed application provides a functional web-based environment for recording and analysing personal expenses.",
+    "page": 26
+  },
+  {
+    "text": "The major outcomes of the implementation include: • A browser-based interface for entering expense records. • Structured storage of expense information using CSV. • Data processing using Pandas. • Calculation of total expenditure. • Category-wise expense analysis. • Monthly spending analysis. • Graphical representation of spending patterns. • Automated identification of the highest-spending category. • CSV download functionality. The project demonstrates the integration of Python programming, web application de- velopment, data processing, and visualisation into a single practical application. The final screenshots of the implemented application will be added to this chapter once the final interface captures are available. 12",
+    "page": 26
+  },
+  {
+    "text": "CHAPTER 3 CONCLUSION AND FUTURE SCOPE 3.1 Conclusion The internship at Cognifyz Technologies provided valuable practical exposure to web ap- plication development and allowed the application of concepts learned during the Bachelor of Technology programme in Computer Science and Engineering. As part of the internship, a web-based Personal Finance and Expense Tracking Applica- tion was developed. The application provides users with an interface for recording expenses and analysing their spending information. Python was used for application development, while Streamlit provided the web interface and Pandas was used for data processing and analysis. The application successfully implements the core requirements of the project, including expense recording, CSV-based data storage, total expenditure calculation, category-wise analysis, monthly spending analysis, graphical visualisation, automated identification of the highest-spending category, and expense-data download.",
+    "page": 27
+  },
+  {
+    "text": "The project demonstrates how a relatively lightweight Python-based technology stack can be used to develop a practical application for personal expense management. The de- velopment process also provided experience in designing an application workflow, handling structured data, testing functionality, identifying issues, and refining the application. 3.2 Skills and Knowledge Gained The internship contributed to both technical and professional development. The major areas of learning include: • Practical application of Python programming concepts. • Development of interactive web applications using Streamlit. • Data manipulation and analysis using Pandas. • Working with CSV-based data storage. • Creating graphical representations of structured data. • Understanding application workflow and user interaction. • Testing and debugging application functionality. • Identifying and resolving implementation issues. 13",
+    "page": 27
+  },
+  {
+    "text": "• Understanding the process of developing and refining a software project. • Improving problem-solving and technical documentation skills. The internship also helped bridge the gap between theoretical academic knowledge and practical software development. 3.3 Challenges Encountered During the development of the application, several challenges were encountered. One of the major challenges was ensuring that expense records were stored and retrieved correctly while maintaining a consistent data structure. Another challenge involved processing date information so that monthly spending could be analysed correctly. Data aggregation also required careful handling to ensure that category-wise totals accurately represented the recorded expenses. Developing the user interface required consideration of how expense-entry controls, stored records, summaries, charts, and other application components should be organised so that users could interact with the application conveniently.",
+    "page": 28
+  },
+  {
+    "text": "Testing and debugging were also important parts of the development process. Issues identified during testing required changes to the application logic and subsequent verification to ensure that the corrected implementation worked as expected. 3.4 Future Scope The current application provides a foundation that can be extended with additional func- tionality in the future. Possible future enhancements include: • Integration with a relational or cloud-based database for more scalable data storage. • User authentication and individual user accounts. • Budget creation and budget monitoring features. • Notifications when spending approaches or exceeds a defined budget. • More advanced financial dashboards and visualisations. • Filtering and searching of expense records. • Recurring expense management. • Export options in additional formats. 14",
+    "page": 28
+  },
+  {
+    "text": "• Improved mobile and responsive interface support. • More advanced automated financial insights based on historical spending patterns. These improvements could make the application more suitable for users who require more comprehensive personal financial management functionality. 3.5 Final Outcome The internship resulted in the development of a functional personal finance and expense tracking web application. The project successfully combined web development, Python programming, data processing, and visualisation to address the problem of organising and understanding personal expenses. The experience gained during the internship has strengthened practical software devel- opment skills and provided a better understanding of the complete development process, from identifying a problem and designing a solution to implementing, testing, debugging, and documenting the final application.",
+    "page": 29
+  },
+  {
+    "text": "Overall, the internship served as a valuable opportunity to apply academic knowledge in a practical development environment and to gain experience relevant to a career in software and web development. 15",
+    "page": 29
+  },
+  {
+    "text": "APPENDICES A.1 Offer Letter Figure A.1: Internship Offer Letter 16",
+    "page": 30
+  },
+  {
+    "text": "A.2 Completion Certificate Figure A.2: Internship Completion Certificate 17",
+    "page": 31
+  },
+  {
+    "text": "REFERENCES [1] Python Software Foundation, “Python documentation,” https://docs.python.org/3/, 2026, accessed during the development of the project. [2] Streamlit, “Streamlit documentation,” https://docs.streamlit.io/, 2026, accessed during the development of the project. [3] Pandas Development Team, “Pandas documentation,” https://pandas.pydata.org/docs/, 2026, accessed during the development of the project. 18",
+    "page": 32
+  }
+]
